@@ -1,0 +1,192 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 15px;
+}
+.message {
+  background-color: green;
+  color: white;
+  max-width: 450px;
+  position: relative;
+  height: 100px;
+  border-radius: 15px;
+  padding: 15px;
+  left: 50%;
+  opacity: 0;
+  transition-timing-function: linear;
+  transform: translateX(-50%);
+}
+.message div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.message i {
+  margin-right: 10px;
+  border: solid 2px white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message span {
+}
+.message p {
+}
+.container {
+  background-color: #eee;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 0px;
+}
+.container h1 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.container .formGroup form .child {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.container .formGroup form .child .inputGroup {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.container .formGroup form .child .inputGroup label {
+  margin-bottom: 10px;
+}
+.container .formGroup form .child .inputGroup label span {
+  color: green;
+}
+.container .formGroup form .child .inputGroup input {
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.container .formGroup form .column {
+  flex-direction: column;
+}
+
+.container .formGroup form .column p span {
+  color: green;
+}
+.container .formGroup form .column .query {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container .formGroup form .column .query .queryChild {
+  flex-grow: 1;
+  background-color: white;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.container .formGroup form .column .query .queryChild .chape {
+  width: 20px;
+  height: 20px;
+  border: solid 1px black;
+  border-radius: 100%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .formGroup form .column .query .queryChild .chape span {
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  background-color: green;
+  border-radius: 100%;
+  display: none;
+}
+.container .formGroup form .child .inputGroup textarea {
+  resize: none;
+  height: 100px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 20px;
+}
+.container .formGroup form .check {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.container .formGroup form .check .checker {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.container .formGroup form .check .checker .chape2 {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container .formGroup form .check .checker .chape2 i {
+  width: 100%;
+  height: 100%;
+  color: white;
+  width: 15px;
+  height: 15px;
+  display: none;
+}
+.container .formGroup form .check .checker p {
+  font-size: 14px;
+}
+.container .formGroup form .check .checker p span {
+  color: green;
+}
+.container .formGroup form .check .hidden {
+  color: red;
+  display: block;
+  margin-bottom: 20px;
+}
+.container .formGroup form .colum .hidden {
+  color: red;
+  margin-bottom: 20px;
+}
+.hidden {
+  color: red;
+  margin-bottom: 20px;
+  display: none !important;
+}
+.container .formGroup form .child input:focus {
+  outline-color: green;
+}
+.container .formGroup form .child .inputGroup textarea:focus {
+  outline-color: green;
+}
+.submit {
+  background-color: green;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
